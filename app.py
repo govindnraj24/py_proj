@@ -30,7 +30,7 @@ connection = pyodbc.connect(
     'UID=sa;'
     'PWD=Success@2026'
 )
-# not configured
+# not configured yet
 '''
 
 
