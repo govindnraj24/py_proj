@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask HTML Form</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:400px;
+            margin:50px auto;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:#007BFF;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        h3{
+            color:green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>User Information</h2>
+
+<form method="POST">
+
+<label>Name</label>
+<input type="text" name="name" required>
+
+<label>Age</label>
+<input type="number" name="age" required>
+
+<button type="submit">Submit</button>
+
+</form>
+
+{% if result %}
+<hr>
+<h3>{{ result }}</h3>
+{% endif %}
+
+</div>
+
+</body>
+</html>
