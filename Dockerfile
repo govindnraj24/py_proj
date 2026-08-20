@@ -3,7 +3,7 @@
 FROM python:3.8
 WORKDIR /app
 RUN pip install flask
-COPY phython_rev/web/templates/ ./templates/
-COPY phython_rev/web/app.py .
+COPY ./web/templates/ ./templates/
+COPY ./web/app.py .
 EXPOSE 5000
 CMD ["python", "app.py"]
